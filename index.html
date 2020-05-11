@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <link rel="stylesheet" href="primitive/src/scss/main.css">
+  <link rel="stylesheet" href="main.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -34,7 +34,6 @@
     </header>
   </div>
 
-
   <section class="container hero flex-row">
     <div class="flex-small no-padding-right order-two">
       <picture>
@@ -47,8 +46,13 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form action="" class="flex-row horizontal-margins relative">
-        <input type="email" name="email" id="email" placeholder="Email Address">
+      <form id="form" class="relative" novalidate>
+        <div class="form-control flex-row horizontal-margins relative">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <img class="exclamation-circle" src="images/icon-error.svg">
+          <small></small>
+        </div>
+
         <button class="one-third round-button absolute">
           <img src="images/icon-arrow.svg" alt="">
         </button>
@@ -61,10 +65,9 @@
         </p>
       </footer>
     </div>
-
   </section>
 
-  
+  <script src="app.js"></script>
 </body>
 
 </html>
